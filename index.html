@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="calculadora.js"></script>
+</head>
+
+<body>
+    <div id="calculadora">
+        <h1 class="logo"></h1>
+        <div id="header">
+            <div id="antigotela"></div>
+            <div id="tela"></div>
+        </div>
+        <div id="botoes">
+            <div>
+                <button class="botaoDigito" value="7">7</button>
+                <button class="botaoDigito" value="8">8</button>
+                <button class="botaoDigito" value="9">9</button>
+                <button class="botaoAcao" value="c">C</button>
+            </div>
+            <div>
+                <button class="botaoDigito" value="4">4</button>
+                <button class="botaoDigito" value="5">5</button>
+                <button class="botaoDigito" value="6">6</button>
+                <button class="botaoAcao" value="+">+</button>
+
+            </div>
+            <div>
+                <button class="botaoDigito" value="1">1</button>
+                <button class="botaoDigito" value="2">2</button>
+                <button class="botaoDigito" value="3">3</button>
+                <button class="botaoAcao" value="-">-</button>
+            </div>
+            <div>
+                <button class="botaoAcao" value="/">/</button>
+                <button class="botaoDigito" value="0">0</button>
+
+                <button class="botaoAcao" value="x">X</button>
+                <button class="botaoAcao" value="=">=</button>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        var botaoDigito = document.getElementsByClassName('botaoDigito');
+        /*botaoDigito[0].onclick = botaoDigitoClick;
+        botaoDigito[1].onclick = botaoDigitoClick;
+        botaoDigito[2].onclick = botaoDigitoClick;
+        botaoDigito[3].onclick = botaoDigitoClick;
+        botaoDigito[4].onclick = botaoDigitoClick;
+        botaoDigito[5].onclick = botaoDigitoClick;
+        botaoDigito[6].onclick = botaoDigitoClick;
+        botaoDigito[7].onclick = botaoDigitoClick;
+        botaoDigito[8].onclick = botaoDigitoClick;
+        botaoDigito[9].onclick = botaoDigitoClick;*/
+        for (var i = 0; i < 10; i++) {
+            botaoDigito[i].onclick = botaoDigitoClick;
+        }
+        var botaoAcao = document.getElementsByClassName('botaoAcao');
+        for (var c = 0; c <= 5; c++) {
+            botaoAcao[c].onclick = botaoAcaoClick;
+        }
+    </script>
+</body>
+
+</html>
