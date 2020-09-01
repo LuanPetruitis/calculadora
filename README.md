@@ -1,9 +1,9 @@
 # Calculadora
 Uma calculadora simples, ajudem a adicionar novas funcionalicades e aperfeiçoar a calculadora
  
-<p>
+
 ![Alt text](/exemploCelular.png "Optional Title")
-</p>
+
 <br>
 
 ![Alt text](/exemplo.png "Optional")
