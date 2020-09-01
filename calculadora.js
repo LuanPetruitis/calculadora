@@ -27,22 +27,20 @@ function rodarAcao(acao) {
         var resultado;
         if (acaoEscolhida === "+") {
 
-            resultado = parseInt(valorAntigoTela) + parseInt(valorTela);
+            resultado = parseFloat(valorAntigoTela) + parseFloat(valorTela);
 
         }
         if (acaoEscolhida === "-") {
 
-            resultado = parseInt(valorAntigoTela) - parseInt(valorTela);
+            resultado = parseFloat(valorAntigoTela) - parseFloat(valorTela);
 
         }
         if (acaoEscolhida === "/") {
-            resultado = parseInt(valorAntigoTela) / parseInt(valorTela);
+            resultado = parseFloat(valorAntigoTela) / parseFloat(valorTela);
 
         }
         if (acaoEscolhida === "x") {
-
-            resultado = parseInt(valorAntigoTela) * parseInt(valorTela);
-
+            resultado = parseFloat(valorAntigoTela) * parseFloat(valorTela);
         }
         atualizaTela(resultado)
     } else {

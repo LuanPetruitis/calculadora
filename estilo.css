@@ -38,7 +38,11 @@ body {
 }
 
 #botoes {
-    grid: 30px;
+    grid: 25%;
+}
+
+#ocupacao {
+    width: 49%;
 }
 
 button {
@@ -67,10 +71,11 @@ button {
     body {
         text-align: center;
         width: 100%;
+        height: 100%;
     }
     #calculadora {
         width: 400px;
-        height: 600px;
+        height: 100%;
         display: inline-block;
     }
     button {

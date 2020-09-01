@@ -18,10 +18,16 @@
         </div>
         <div id="botoes">
             <div>
+                <button class="botaoAcao" value="c" id="ocupacao">C</button>
+                <button class="botaoAcaoPorcento" value="%">%</button>
+                <button class="botaoAcao" value="/">/</button>
+            </div>
+            <div>
                 <button class="botaoDigito" value="7">7</button>
                 <button class="botaoDigito" value="8">8</button>
                 <button class="botaoDigito" value="9">9</button>
-                <button class="botaoAcao" value="c">C</button>
+                <button class="botaoAcao" value="x">X</button>
+
             </div>
             <div>
                 <button class="botaoDigito" value="4">4</button>
@@ -37,10 +43,9 @@
                 <button class="botaoAcao" value="-">-</button>
             </div>
             <div>
-                <button class="botaoAcao" value="/">/</button>
-                <button class="botaoDigito" value="0">0</button>
+                <button class="botaoDigito" value="0" id="ocupacao">0</button>
+                <button class="botaoDigito" value=".">,</button>
 
-                <button class="botaoAcao" value="x">X</button>
                 <button class="botaoAcao" value="=">=</button>
             </div>
 
@@ -58,7 +63,7 @@
         botaoDigito[7].onclick = botaoDigitoClick;
         botaoDigito[8].onclick = botaoDigitoClick;
         botaoDigito[9].onclick = botaoDigitoClick;*/
-        for (var i = 0; i < 10; i++) {
+        for (var i = 0; i < 11; i++) {
             botaoDigito[i].onclick = botaoDigitoClick;
         }
         var botaoAcao = document.getElementsByClassName('botaoAcao');
