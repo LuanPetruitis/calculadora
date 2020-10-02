@@ -43,6 +43,11 @@ function rodarAcao(acao) {
             resultado = parseFloat(valorAntigoTela) * parseFloat(valorTela);
         }
         atualizaTela(resultado)
+    } else if (acao === "%") {
+        if (acaoEscolhida === "x") {
+            resultado = parseFloat(valorAntigoTela) * (parseFloat(valorTela) / 100);
+        }
+        atualizaTela(resultado)
     } else {
         if (acao === "c") {
             location.reload();
